@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Information stagiére</legend>
+			
+			<form action="recapitulation.php" method="GET">
+				<label>Civilité : </label>
+				<select name="civ" size="1">
+					<option value="M.">M.</option>
+					<option value="mme">Mme</option>
+					<option value="Melle">Melle</option>
+				</select>
+				<br />
+				<label>Nom :</label>
+				<input type="text" name="nom" placeholder="Saisir votre nom" />				
+				<br/>
+				<label>Prenom :</label>
+				<input type="text" name="prenom" placeholder="Saisir votre prenom" />				
+				<br/>	
+				<label>Date de naissance:</label>
+				<input type="date" name="dateN" />
+				<br />
+				<label>Numéro de telephone:</label>
+				<input type="text" name="numTel" placeholder="0x-xx-xx-xx-xx" />	
+				<br />
+				<legend>Email:</legend>	
+				<input type="email" name="mail" placeholder="aaaaa@bbbbb.ccc"/>
+				<br />
+				<legend>Niveau php:</legend>	
+				<input type="radio" name="nivP" value="Débutant" checked/>Débutant
+				<input type="radio" name="nivP" value="Moyen" />Moyen
+				<input type="radio" name="nivP" value="Bon" />Bon
+				<br />
+				<legend>Framework:</legend>	
+				<input type="checkbox" name="fram[]" value="Symfony" />Symfony
+				<input type="checkbox" name="fram[]" value="CodeIgniter" />CodeIgniter
+				<input type="checkbox" name="fram[]" value="FuelPHP" />FuelPHP
+				<input type="checkbox" name="fram[]" value="CakePHP" />CakePHP
+				<input type="checkbox" name="fram[]" value="Laravel" />Laravel
+				<br/>
+				<legend>Moi:</legend>	
+				<textarea name="moi" rows="8" cols="45" >
+				</textarea>
+				<br />
+				<input type="submit" value="Valider" /> 
+				<input type="reset" value="Annuler"/>
+			
+			</form>
+			
+		</fieldset>
+		
+	</body>
+</html>
